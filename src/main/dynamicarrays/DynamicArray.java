@@ -1,4 +1,4 @@
-package dynamicarrays;
+package main.dynamicarrays;
 
 import java.util.Iterator;
 
