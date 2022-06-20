@@ -22,14 +22,10 @@ public class ArrayStack<T> implements Stack<T> {
     public boolean isEmpty() {
         return size() == 0;
     }
-    private void increaseSize(){
-        capacity *= 2;
-        array = Arrays.copyOf(array, capacity);
-    }
     @Override
     public void push(T key) {
         if(size == capacity){
-            increaseSize();
+            array = Arrays.copyOf(array, capacity << 1);
         }
         array[size++] = key;
     }

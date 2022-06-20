@@ -3,6 +3,9 @@ package test.stack;
 import java.util.ArrayList;
 import main.stack.ArrayStack;
 import java.util.List;
+
+import main.stack.IntStack;
+import main.stack.ListStack;
 import main.stack.Stack;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +18,9 @@ public class StackTest {
 
     @Before
     public void setup() {
+        stacks.add(new ListStack<Integer>());
         stacks.add(new ArrayStack<Integer>());
+        stacks.add(new IntStack());
     }
 
     @Test
