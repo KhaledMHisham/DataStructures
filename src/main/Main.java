@@ -1,8 +1,11 @@
 package main;
 
+import main.queues.ArrayQueue;
+
+import java.math.BigInteger;
+
 public class Main {
     public static void main(String[] args) {
-        int x = 16;
-        System.out.print(x << 1);
+        System.out.println("Hello World!");
     }
 }
